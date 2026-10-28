@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Ainara Aristizabal Guillén">
+  <meta name="description" content="Página web sobre mi película favorita">
+  <meta name="date" content="2026-19-10">
+  <title>Mi película favorita</title>
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 400px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 200px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 200px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+	<header>
+        <h1>Jurassic Park 3</h1>
+    </header>
+    <nav>
+        <h2>Sinopsis</h2>
+        <p>El doctor Alan Grant, ansioso por conseguir fondos que financien su estudio sobre la inteligencia del velociraptor, acepta la oferta de una pareja de millonarios, Paul y Amanda Kirby, para sobrevolar la Isla Sorna (Costa Rica), poblada por dinosaurios creados genéticamente. Tras un aterrizaje forzoso en la isla, Alan descubre que los Kirby estaban buscando a su hijo adolescente, perdido en la isla tras un accidente de parapente. </p>
+		<a href="#reparto">Ir al reparto de actores</a>
+    </nav>
+        
+    
+	<section>
+        <h2>Reparto principal</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Actor / Actriz</th>
+                    <th>Personaje</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sam Neill</td>
+                    <td>Dr. Alan Grant</td>
+                </tr>
+                <tr>
+                    <td>William H. Macy</td>
+                    <td>Paul Kirby</td>
+                </tr>
+                <tr>
+                    <td>Téa Leoni</td>
+                    <td>Amanda Kirby</td>
+                </tr>
+                <tr>
+                    <td>Alessandro Nivola</td>
+                    <td>Billy Brennan</td>
+                </tr>
+                <tr>
+                    <td>Trevor Morgan</td>
+                    <td>Eric Kirby</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </section>
+  <aside>
+        <h3>Imágenes</h3>
+        <img src="https://tse3.mm.bing.net/th/id/OIP.h2wtzEse2eshUJfTnbLdxgHaLI?r=0&pid=Api&h=220&P=0" alt="Póster oficial de la película Jurassic Park 3 de 2001" width="200">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.lBPlAyz1w840jZUIfvqGtAHaHU?r=0&pid=Api&h=220&P=0" alt="El Spinosaurusn dinosaurio protagonista" width="300">
+        <h3>Tráiler oficial</h3>
+		    <iframe width="560" height="315" src="https://www.youtube.com/embed/gjIaV6CU0wA?si=gJrOpVb5e1HaVhYw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		    <a href="https://www.filmaffinity.com/es/film988008.html" target="_blank">Ver ficha de Jurassic Park 3 </a>
+  </aside> 
+
+  <footer>
+    <p>&copy; 2026 Mi película favorita: Jurassic Park 3 </p>
+  </footer>
+</body>
+</html>
